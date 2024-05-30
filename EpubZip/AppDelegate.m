@@ -30,12 +30,28 @@
     return YES;
 }
 
+- (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
+{
+    [self processUrl:[NSURL fileURLWithPath:filename]];
+    return YES;
+}
+
+- (void)application:(NSApplication *)sender openFiles:(NSArray<NSString *> *)filenames
+{
+    [filenames enumerateObjectsUsingBlock:
+        ^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
+        {
+            [self processUrl:[NSURL fileURLWithPath:obj]];
+        }];
+}
+
 - (void)application:(NSApplication *)application openURLs:(NSArray<NSURL *> *)urls
 {
-    [urls enumerateObjectsUsingBlock:^(NSURL * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
-    {
-        [self processUrl:obj];
-    }];
+    [urls enumerateObjectsUsingBlock:
+        ^(NSURL * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop)
+        {
+            [self processUrl:obj];
+        }];
 }
 
 #pragma mark -
