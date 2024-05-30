@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA709C2B2C0887E7007FF575 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA709C2A2C0887E7007FF575 /* TaskController.m */; };
 		DAD8682E2C0882A300E8DE7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD8682D2C0882A300E8DE7B /* AppDelegate.m */; };
 		DAD868302C0882A400E8DE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD8682F2C0882A400E8DE7B /* Assets.xcassets */; };
 		DAD868332C0882A400E8DE7B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DAD868322C0882A400E8DE7B /* Base */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA709C292C0887E7007FF575 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
+		DA709C2A2C0887E7007FF575 /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskController.m; sourceTree = "<group>"; };
 		DAD868292C0882A300E8DE7B /* EpubZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpubZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD8682C2C0882A300E8DE7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAD8682D2C0882A300E8DE7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -21,6 +24,7 @@
 		DAD868322C0882A400E8DE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DAD868342C0882A400E8DE7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAD868362C0882A400E8DE7B /* EpubZip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpubZip.entitlements; sourceTree = "<group>"; };
+		DAD8683C2C08851300E8DE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,12 @@
 				DAD8682C2C0882A300E8DE7B /* AppDelegate.h */,
 				DAD8682D2C0882A300E8DE7B /* AppDelegate.m */,
 				DAD8682F2C0882A400E8DE7B /* Assets.xcassets */,
-				DAD868312C0882A400E8DE7B /* MainMenu.xib */,
-				DAD868342C0882A400E8DE7B /* main.m */,
 				DAD868362C0882A400E8DE7B /* EpubZip.entitlements */,
+				DAD8683C2C08851300E8DE7B /* Info.plist */,
+				DAD868342C0882A400E8DE7B /* main.m */,
+				DAD868312C0882A400E8DE7B /* MainMenu.xib */,
+				DA709C292C0887E7007FF575 /* TaskController.h */,
+				DA709C2A2C0887E7007FF575 /* TaskController.m */,
 			);
 			path = EpubZip;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA709C2B2C0887E7007FF575 /* TaskController.m in Sources */,
 				DAD868352C0882A400E8DE7B /* main.m in Sources */,
 				DAD8682E2C0882A300E8DE7B /* AppDelegate.m in Sources */,
 			);
@@ -275,7 +283,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EpubZip/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -299,7 +310,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EpubZip/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
