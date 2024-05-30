@@ -6,13 +6,50 @@
 	objectVersion = 56;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		DAF747092C08A5F7000E3213 /* DMG */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DAF7470A2C08A5F7000E3213 /* Build configuration list for PBXAggregateTarget "DMG" */;
+			buildPhases = (
+				DAF7470D2C08A60F000E3213 /* ShellScript */,
+			);
+			dependencies = (
+				DAF7470F2C08AC24000E3213 /* PBXTargetDependency */,
+			);
+			name = DMG;
+			productName = DMG;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		DA709C2B2C0887E7007FF575 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA709C2A2C0887E7007FF575 /* TaskController.m */; };
 		DAD8682E2C0882A300E8DE7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD8682D2C0882A300E8DE7B /* AppDelegate.m */; };
 		DAD868302C0882A400E8DE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD8682F2C0882A400E8DE7B /* Assets.xcassets */; };
 		DAD868332C0882A400E8DE7B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DAD868322C0882A400E8DE7B /* Base */; };
 		DAD868352C0882A400E8DE7B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD868342C0882A400E8DE7B /* main.m */; };
+		DAF746FB2C08A5D8000E3213 /* create-dmg.builder in Resources */ = {isa = PBXBuildFile; fileRef = DAF746E32C08A5D8000E3213 /* create-dmg.builder */; };
+		DAF746FC2C08A5D8000E3213 /* Developer Notes.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF746E52C08A5D8000E3213 /* Developer Notes.md */; };
+		DAF746FD2C08A5D8000E3213 /* Release Checklist.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF746E62C08A5D8000E3213 /* Release Checklist.md */; };
+		DAF746FE2C08A5D8000E3213 /* Application.app in Resources */ = {isa = PBXBuildFile; fileRef = DAF746E82C08A5D8000E3213 /* Application.app */; };
+		DAF746FF2C08A5D8000E3213 /* installer_background.png in Resources */ = {isa = PBXBuildFile; fileRef = DAF746EA2C08A5D8000E3213 /* installer_background.png */; };
+		DAF747002C08A5D8000E3213 /* sample in Resources */ = {isa = PBXBuildFile; fileRef = DAF746EB2C08A5D8000E3213 /* sample */; };
+		DAF747012C08A5D8000E3213 /* eula-resources-template.xml in Resources */ = {isa = PBXBuildFile; fileRef = DAF746EE2C08A5D8000E3213 /* eula-resources-template.xml */; };
+		DAF747032C08A5D8000E3213 /* hello.txt in Resources */ = {isa = PBXBuildFile; fileRef = DAF746F12C08A5D8000E3213 /* hello.txt */; };
+		DAF747042C08A5D8000E3213 /* run-test in Resources */ = {isa = PBXBuildFile; fileRef = DAF746F32C08A5D8000E3213 /* run-test */; };
+		DAF747052C08A5D8000E3213 /* create-dmg in Resources */ = {isa = PBXBuildFile; fileRef = DAF746F62C08A5D8000E3213 /* create-dmg */; };
+		DAF747062C08A5D8000E3213 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DAF746F72C08A5D8000E3213 /* LICENSE */; };
+		DAF747082C08A5D8000E3213 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DAF746F92C08A5D8000E3213 /* README.md */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAF7470E2C08AC24000E3213 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAD868212C0882A300E8DE7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAD868282C0882A300E8DE7B;
+			remoteInfo = EpubZip;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DA709C292C0887E7007FF575 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
@@ -25,6 +62,20 @@
 		DAD868342C0882A400E8DE7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAD868362C0882A400E8DE7B /* EpubZip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpubZip.entitlements; sourceTree = "<group>"; };
 		DAD8683C2C08851300E8DE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DAF746E32C08A5D8000E3213 /* create-dmg.builder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-dmg.builder"; sourceTree = "<group>"; };
+		DAF746E52C08A5D8000E3213 /* Developer Notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Developer Notes.md"; sourceTree = "<group>"; };
+		DAF746E62C08A5D8000E3213 /* Release Checklist.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Release Checklist.md"; sourceTree = "<group>"; };
+		DAF746E82C08A5D8000E3213 /* Application.app */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Application.app; sourceTree = "<group>"; };
+		DAF746EA2C08A5D8000E3213 /* installer_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = installer_background.png; sourceTree = "<group>"; };
+		DAF746EB2C08A5D8000E3213 /* sample */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample; sourceTree = "<group>"; };
+		DAF746EE2C08A5D8000E3213 /* eula-resources-template.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "eula-resources-template.xml"; sourceTree = "<group>"; };
+		DAF746EF2C08A5D8000E3213 /* template.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = template.applescript; sourceTree = "<group>"; };
+		DAF746F12C08A5D8000E3213 /* hello.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hello.txt; sourceTree = "<group>"; };
+		DAF746F32C08A5D8000E3213 /* run-test */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "run-test"; sourceTree = "<group>"; };
+		DAF746F62C08A5D8000E3213 /* create-dmg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-dmg"; sourceTree = "<group>"; };
+		DAF746F72C08A5D8000E3213 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DAF746F82C08A5D8000E3213 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DAF746F92C08A5D8000E3213 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +92,7 @@
 		DAD868202C0882A300E8DE7B = {
 			isa = PBXGroup;
 			children = (
+				DAF746FA2C08A5D8000E3213 /* create-dmg */,
 				DAD8682B2C0882A300E8DE7B /* EpubZip */,
 				DAD8682A2C0882A300E8DE7B /* Products */,
 			);
@@ -68,6 +120,99 @@
 				DA709C2A2C0887E7007FF575 /* TaskController.m */,
 			);
 			path = EpubZip;
+			sourceTree = "<group>";
+		};
+		DAF746E42C08A5D8000E3213 /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746E32C08A5D8000E3213 /* create-dmg.builder */,
+			);
+			path = builder;
+			sourceTree = "<group>";
+		};
+		DAF746E72C08A5D8000E3213 /* doc-project */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746E52C08A5D8000E3213 /* Developer Notes.md */,
+				DAF746E62C08A5D8000E3213 /* Release Checklist.md */,
+			);
+			path = "doc-project";
+			sourceTree = "<group>";
+		};
+		DAF746E92C08A5D8000E3213 /* source_folder */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746E82C08A5D8000E3213 /* Application.app */,
+			);
+			path = source_folder;
+			sourceTree = "<group>";
+		};
+		DAF746EC2C08A5D8000E3213 /* 01-main-example */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746E92C08A5D8000E3213 /* source_folder */,
+				DAF746EA2C08A5D8000E3213 /* installer_background.png */,
+				DAF746EB2C08A5D8000E3213 /* sample */,
+			);
+			path = "01-main-example";
+			sourceTree = "<group>";
+		};
+		DAF746ED2C08A5D8000E3213 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746EC2C08A5D8000E3213 /* 01-main-example */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		DAF746F02C08A5D8000E3213 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746EE2C08A5D8000E3213 /* eula-resources-template.xml */,
+				DAF746EF2C08A5D8000E3213 /* template.applescript */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		DAF746F22C08A5D8000E3213 /* my files */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746F12C08A5D8000E3213 /* hello.txt */,
+			);
+			path = "my files";
+			sourceTree = "<group>";
+		};
+		DAF746F42C08A5D8000E3213 /* 007-space-in-dir-name */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746F22C08A5D8000E3213 /* my files */,
+				DAF746F32C08A5D8000E3213 /* run-test */,
+			);
+			path = "007-space-in-dir-name";
+			sourceTree = "<group>";
+		};
+		DAF746F52C08A5D8000E3213 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746F42C08A5D8000E3213 /* 007-space-in-dir-name */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		DAF746FA2C08A5D8000E3213 /* create-dmg */ = {
+			isa = PBXGroup;
+			children = (
+				DAF746E42C08A5D8000E3213 /* builder */,
+				DAF746E72C08A5D8000E3213 /* doc-project */,
+				DAF746ED2C08A5D8000E3213 /* examples */,
+				DAF746F02C08A5D8000E3213 /* support */,
+				DAF746F52C08A5D8000E3213 /* tests */,
+				DAF746F62C08A5D8000E3213 /* create-dmg */,
+				DAF746F72C08A5D8000E3213 /* LICENSE */,
+				DAF746F82C08A5D8000E3213 /* Makefile */,
+				DAF746F92C08A5D8000E3213 /* README.md */,
+			);
+			path = "create-dmg";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +247,9 @@
 					DAD868282C0882A300E8DE7B = {
 						CreatedOnToolsVersion = 15.3;
 					};
+					DAF747092C08A5F7000E3213 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = DAD868242C0882A300E8DE7B /* Build configuration list for PBXProject "EpubZip" */;
@@ -118,6 +266,7 @@
 			projectRoot = "";
 			targets = (
 				DAD868282C0882A300E8DE7B /* EpubZip */,
+				DAF747092C08A5F7000E3213 /* DMG */,
 			);
 		};
 /* End PBXProject section */
@@ -127,12 +276,46 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAF747002C08A5D8000E3213 /* sample in Resources */,
+				DAF746FC2C08A5D8000E3213 /* Developer Notes.md in Resources */,
+				DAF747062C08A5D8000E3213 /* LICENSE in Resources */,
 				DAD868302C0882A400E8DE7B /* Assets.xcassets in Resources */,
+				DAF746FE2C08A5D8000E3213 /* Application.app in Resources */,
+				DAF746FF2C08A5D8000E3213 /* installer_background.png in Resources */,
+				DAF746FD2C08A5D8000E3213 /* Release Checklist.md in Resources */,
+				DAF747042C08A5D8000E3213 /* run-test in Resources */,
+				DAF747052C08A5D8000E3213 /* create-dmg in Resources */,
+				DAF746FB2C08A5D8000E3213 /* create-dmg.builder in Resources */,
+				DAF747082C08A5D8000E3213 /* README.md in Resources */,
+				DAF747012C08A5D8000E3213 /* eula-resources-template.xml in Resources */,
 				DAD868332C0882A400E8DE7B /* Base in Resources */,
+				DAF747032C08A5D8000E3213 /* hello.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DAF7470D2C08A60F000E3213 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -x\n\nDMG_DIR=\"${BUILT_PRODUCTS_DIR}/../DMG\"\n\nmkdir -pv \"$DMG_DIR\"\n\nDMG_FILE=\"$DMG_DIR/EpubZip.dmg\"\n\ntest -f \"${DMG_FILE}\" && rm \"${DMG_FILE}\"\n\n./create-dmg/create-dmg \\\n    --volname \"EpubZip\" \\\n    --window-pos 200 120 \\\n    --window-size 600 400 \\\n    --icon-size 100 \\\n    --icon \"EpubZip.app\" 155 175 \\\n    --app-drop-link 455 175 \\\n    --codesign \"Developer ID Application\" \\\n    \"${DMG_FILE}\" \\\n    \"${BUILT_PRODUCTS_DIR}/\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAD868252C0882A300E8DE7B /* Sources */ = {
@@ -146,6 +329,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAF7470F2C08AC24000E3213 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAD868282C0882A300E8DE7B /* EpubZip */;
+			targetProxy = DAF7470E2C08AC24000E3213 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DAD868312C0882A400E8DE7B /* MainMenu.xib */ = {
@@ -196,7 +387,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -212,7 +402,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -257,7 +447,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -267,7 +456,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -330,6 +519,24 @@
 			};
 			name = Release;
 		};
+		DAF7470B2C08A5F7000E3213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAF7470C2C08A5F7000E3213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QBPW9LPK8E;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -347,6 +554,15 @@
 			buildConfigurations = (
 				DAD8683A2C0882A400E8DE7B /* Debug */,
 				DAD8683B2C0882A400E8DE7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAF7470A2C08A5F7000E3213 /* Build configuration list for PBXAggregateTarget "DMG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF7470B2C08A5F7000E3213 /* Debug */,
+				DAF7470C2C08A5F7000E3213 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
