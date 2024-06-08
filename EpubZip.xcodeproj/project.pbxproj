@@ -60,8 +60,7 @@
 		DAD8682F2C0882A400E8DE7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD868322C0882A400E8DE7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DAD868342C0882A400E8DE7B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DAD868362C0882A400E8DE7B /* EpubZip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EpubZip.entitlements; sourceTree = "<group>"; };
-		DAD8683C2C08851300E8DE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DAD8683C2C08851300E8DE7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAF746E32C08A5D8000E3213 /* create-dmg.builder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-dmg.builder"; sourceTree = "<group>"; };
 		DAF746E52C08A5D8000E3213 /* Developer Notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Developer Notes.md"; sourceTree = "<group>"; };
 		DAF746E62C08A5D8000E3213 /* Release Checklist.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Release Checklist.md"; sourceTree = "<group>"; };
@@ -94,11 +93,21 @@
 			children = (
 				DAD8682C2C0882A300E8DE7B /* AppDelegate.h */,
 				DAD8682D2C0882A300E8DE7B /* AppDelegate.m */,
+				DAD868342C0882A400E8DE7B /* main.m */,
 				DA709C292C0887E7007FF575 /* TaskController.h */,
 				DA709C2A2C0887E7007FF575 /* TaskController.m */,
-				DAD868342C0882A400E8DE7B /* main.m */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		DAC0447A2C1475B900E4B527 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAD8682F2C0882A400E8DE7B /* Assets.xcassets */,
+				DAD8683C2C08851300E8DE7B /* Info.plist */,
+				DAD868312C0882A400E8DE7B /* MainMenu.xib */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		DAD868202C0882A300E8DE7B = {
@@ -121,11 +130,8 @@
 		DAD8682B2C0882A300E8DE7B /* EpubZip */ = {
 			isa = PBXGroup;
 			children = (
+				DAC0447A2C1475B900E4B527 /* Resources */,
 				DAC044792C14752C00E4B527 /* Sources */,
-				DAD8682F2C0882A400E8DE7B /* Assets.xcassets */,
-				DAD868362C0882A400E8DE7B /* EpubZip.entitlements */,
-				DAD8683C2C08851300E8DE7B /* Info.plist */,
-				DAD868312C0882A400E8DE7B /* MainMenu.xib */,
 			);
 			path = EpubZip;
 			sourceTree = "<group>";
@@ -476,14 +482,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = EpubZip/EpubZip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QBPW9LPK8E;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EpubZip/Info.plist;
+				INFOPLIST_FILE = EpubZip/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
@@ -504,14 +509,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = EpubZip/EpubZip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QBPW9LPK8E;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EpubZip/Info.plist;
+				INFOPLIST_FILE = EpubZip/Resources/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainNibFile = MainMenu;
