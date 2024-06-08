@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		DA709C2B2C0887E7007FF575 /* TaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA709C2A2C0887E7007FF575 /* TaskController.m */; };
+		DAC0447D2C14885800E4B527 /* notarization.sh in Resources */ = {isa = PBXBuildFile; fileRef = DAC0447C2C14885800E4B527 /* notarization.sh */; };
 		DAD8682E2C0882A300E8DE7B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD8682D2C0882A300E8DE7B /* AppDelegate.m */; };
 		DAD868302C0882A400E8DE7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD8682F2C0882A400E8DE7B /* Assets.xcassets */; };
 		DAD868332C0882A400E8DE7B /* Base in Resources */ = {isa = PBXBuildFile; fileRef = DAD868322C0882A400E8DE7B /* Base */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		DA709C292C0887E7007FF575 /* TaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskController.h; sourceTree = "<group>"; };
 		DA709C2A2C0887E7007FF575 /* TaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskController.m; sourceTree = "<group>"; };
+		DAC0447C2C14885800E4B527 /* notarization.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = notarization.sh; sourceTree = "<group>"; };
 		DAD868292C0882A300E8DE7B /* EpubZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpubZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD8682C2C0882A300E8DE7B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAD8682D2C0882A300E8DE7B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DAC0447B2C1487F900E4B527 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				DAC0447C2C14885800E4B527 /* notarization.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		DAD868202C0882A300E8DE7B = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		DAD8682B2C0882A300E8DE7B /* EpubZip */ = {
 			isa = PBXGroup;
 			children = (
+				DAC0447B2C1487F900E4B527 /* Scripts */,
 				DAC0447A2C1475B900E4B527 /* Resources */,
 				DAC044792C14752C00E4B527 /* Sources */,
 			);
@@ -302,6 +313,7 @@
 				DAF746FB2C08A5D8000E3213 /* create-dmg.builder in Resources */,
 				DAF747082C08A5D8000E3213 /* README.md in Resources */,
 				DAF747012C08A5D8000E3213 /* eula-resources-template.xml in Resources */,
+				DAC0447D2C14885800E4B527 /* notarization.sh in Resources */,
 				DAD868332C0882A400E8DE7B /* Base in Resources */,
 				DAF747032C08A5D8000E3213 /* hello.txt in Resources */,
 			);
@@ -482,7 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QBPW9LPK8E;
@@ -509,7 +521,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QBPW9LPK8E;
@@ -525,6 +539,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_CODE_SIGN_FLAGS = "--timestamp";
 				PRODUCT_BUNDLE_IDENTIFIER = com.danilkorotenko.EpubZip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
