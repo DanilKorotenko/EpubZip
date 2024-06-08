@@ -89,6 +89,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DAC044792C14752C00E4B527 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DAD8682C2C0882A300E8DE7B /* AppDelegate.h */,
+				DAD8682D2C0882A300E8DE7B /* AppDelegate.m */,
+				DA709C292C0887E7007FF575 /* TaskController.h */,
+				DA709C2A2C0887E7007FF575 /* TaskController.m */,
+				DAD868342C0882A400E8DE7B /* main.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		DAD868202C0882A300E8DE7B = {
 			isa = PBXGroup;
 			children = (
@@ -109,15 +121,11 @@
 		DAD8682B2C0882A300E8DE7B /* EpubZip */ = {
 			isa = PBXGroup;
 			children = (
-				DAD8682C2C0882A300E8DE7B /* AppDelegate.h */,
-				DAD8682D2C0882A300E8DE7B /* AppDelegate.m */,
+				DAC044792C14752C00E4B527 /* Sources */,
 				DAD8682F2C0882A400E8DE7B /* Assets.xcassets */,
 				DAD868362C0882A400E8DE7B /* EpubZip.entitlements */,
 				DAD8683C2C08851300E8DE7B /* Info.plist */,
-				DAD868342C0882A400E8DE7B /* main.m */,
 				DAD868312C0882A400E8DE7B /* MainMenu.xib */,
-				DA709C292C0887E7007FF575 /* TaskController.h */,
-				DA709C2A2C0887E7007FF575 /* TaskController.m */,
 			);
 			path = EpubZip;
 			sourceTree = "<group>";
